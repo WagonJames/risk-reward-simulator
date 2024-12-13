@@ -18,5 +18,5 @@ The S&P 500 data used in this project can be downloaded [here](https://www.kaggl
 ## How to Run
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/risk-reward-simulator.git
+   git clone https://github.com/WagonJames/risk-reward-simulator.git
 
