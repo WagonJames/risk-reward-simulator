@@ -79,7 +79,8 @@ with tab2:
 
     if uploaded_file is not None:
         #load uploaded file
-        historical_data = pd.read_csv(uploaded_file)
+        # handle potential byte order marks (BOM) from files exported by Excel
+        historical_data = pd.read_csv(uploaded_file, encoding="utf-8-sig")
 
         #display uploaded file
         st.write("Uploaded Historical Data:")
