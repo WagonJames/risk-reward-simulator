@@ -20,3 +20,7 @@ The S&P 500 data used in this project can be downloaded [here](https://www.kaggl
    ```bash
    git clone https://github.com/WagonJames/risk-reward-simulator.git
 
+   cd risk-reward-simulator
+   pip install -r requirements.txt
+   streamlit run app.py
+   ```
