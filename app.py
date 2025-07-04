@@ -79,7 +79,9 @@ with tab2:
 
     if uploaded_file is not None:
         #load uploaded file
-        historical_data = pd.read_csv(uploaded_file)
+        historical_data = pd.read_csv(uploaded_file, encoding="utf-8-sig")
+        # Remove potential BOM from column names
+        historical_data.rename(columns=lambda x: x.replace('\ufeff', ''), inplace=True)
 
         #display uploaded file
         st.write("Uploaded Historical Data:")
